@@ -6,7 +6,6 @@ import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import EmployeeTable from "../EmployeeBenefits/EmployeeBenefits";
 import MainDash from "../DashBoard/MainDash/MainDash";
-import EmployeeTable from "../EmployeeList/EmployeeList";
 
 const SlideBar = () => {
     const [selected, setSelected] = useState(0);
@@ -55,7 +54,6 @@ const SlideBar = () => {
                 </motion.div>
                 {/* Render the selected component */}
                 {selected === 0 && <MainDash />}
-                {selected === 1 && <EmployeeTable />}
                 {selected === 4 && <EmployeeTable />}
 
             </div>
